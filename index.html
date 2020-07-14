@@ -16,9 +16,71 @@
             - How to think about the overall layout of an app;
             - Use flexbox in a real-world project for the first time.
         -->
+
+        <!--
+            - Why to use SVG icons vs font icons;
+            - How to find, generate and use SVG sprites in HTML;
+            - How to change the color of an SVG icon in CSS;
+            - How to use more advanced flexbox alignment techniques, including justify-content, align-items,
+              align-self and flex.
+        -->
+
+        <!--
+            - SVG, stands for Scalable Vector Graphics, 
+            - We are gonna use a great app called 'IcoMoon.'
+
+            - 'symbol-defs' and this is a so-called sprite file.
+            - What is a sprite file ? 
+                    it's simply an SVG file which contains all of these 10 SVG images in it, okay, 
+                    and that's the one we're actually gonna use, because this way, we only have to use 
+                    one global file, which is symbol-defs.svg file and from there we can select each of the icons.
+
+        -->
+
+        <!--
+            this will work only in a web server:
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+        -->
+
+        <!--
+            
+        -->
         <div class="container">
+
+            <!-- HEADER PART-->
             <header class="header">
-                Header Part
+                <img src="img/logo.png" alt="trillo logo" class="logo">
+
+                <!-- Search Bar -->
+                <form action="#" class="search">
+                    <input type="text" class="search__input" placeholder="Search hotels">
+                    <button class="search__button">
+                        <svg class="search__icon">
+                            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- User navigation -->
+                <nav class="user-nav">
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                        </svg>
+                        <span class="user-nav__notification">7</span>
+                    </div>
+                    
+                    <div class="user-nav__icon-box">
+                        <svg class="user-nav__icon">
+                            <use xlink:href="img/sprite.svg#icon-chat"></use>
+                        </svg>
+                        <span class="user-nav__notification">13</span>
+                    </div>
+                    <div class="user-nav__user">
+                        <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
+                        <span class="user-nav__user-name">Spyros</span>
+                    </div>
+                </nav>
             </header>
             <div class="content">
                 <nav class="sidebar">
