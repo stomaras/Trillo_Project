@@ -2,7 +2,7 @@
 // LOGO
 .logo {
     height: 3.25rem;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
 }
 
 
@@ -68,30 +68,59 @@
 // USER NAVIGATION 
 
 .user-nav {
-    background-color: greenyellow;
-    &__icon-box {
+    align-self: stretch;
+    
+    display: flex;
+    align-items: center;
 
+    // user-nav and all of the direct children to have the below properties
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
+
+    &__icon-box {
+        position: relative;
     }
 
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
+        fill: var(--color-grey-dark-2);
     }
 
+    // flexbox does not only work with child elements but also, when we have text
     &__notification {
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: #fff;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+
+        display: flex;
+        justify-content: center;// centers the content horizontally
+        align-items: center;// centers the content vertically
 
     }
 
-    &__user {
 
-    }
 
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
+        margin-right: 1rem;
     }
 
-    &__user-name {
-
-    }
+    
 }
