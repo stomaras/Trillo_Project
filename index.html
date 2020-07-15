@@ -48,6 +48,16 @@
             Well, it should simply be the parent element of the elements that we want side by side.
             So these elements are the icon the search bar, user navigation.
         -->
+
+        <!--
+            How to use scaleY and multiple transition properties with different settings, to create a
+            creative hover effect
+
+            How and why to use the currentColor CSS variable;
+
+            How to use some more advanced flexbox alignment techniques, including flex-direction,
+            justify-content and align-items.
+        -->
         <div class="container">
 
             <!-- HEADER PART-->
@@ -87,7 +97,47 @@
             </header>
             <div class="content">
                 <nav class="sidebar">
-                    Navigation
+                    <ul class="side-nav">
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span>Hotel</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span>Flight</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span>Car rental</span>
+                            </a>
+                        </li>
+
+                        <li class="side-nav__item">
+                            <a href="#" class="side-nav__link">
+                                <svg class="side-nav__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span>Tours</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="legal">
+                        &copy; 2020 by trillo. All rights reserved.
+                    </div>
                 </nav>
                 <main class="hotel-view">
                     Hotel View

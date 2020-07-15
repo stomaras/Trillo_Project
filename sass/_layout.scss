@@ -27,11 +27,16 @@
     background-color: var(--color-grey-dark-1);
 
     flex: 0 0 18%;
+
+    display: flex; // it is a flex container
+    flex-direction: column; // we change the direction of the main axis from left to right, to top to bottom.
+    justify-content: space-between;
 }
 
 .hotel-view {
     background-color: #fff;
     background-color: orangered;
+    height: 80rem;
     flex: 1; // that element should grow as much as it can.
 }
 
